@@ -1,0 +1,39 @@
+@import './config';
+/*
+    designWidth/oneRemForDesignWidth = screenWidth/oneRemForScreenWidth恒成立
+    已知screenWidth = 100vw，designWidth = 750px时，oneRemForDesignWidth = 100px
+    求oneRemForScreenWidth
+    oneRemForScreenWidth = screenWidth/（designWidth/oneRemForDesignWidth）
+                       = 100vw/（750px/100px）
+*/
+
+html {
+    $k: $designWidth/$oneRemForDesignWidth;
+    font-family: $yh;
+    font-size:calc(100vw/#{$k});
+    @media screen and (max-width: $minScreenWidth) {
+        font-size: $minScreenWidth/#{$k}
+    }
+    @media screen and (min-width:$maxScreenWidth) {
+        font-size: $maxScreenWidth/#{$k}
+    }
+}
+
+body {
+    font-size: 16PX;
+    //恢复默认字体大小
+}
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: $maxScreenWidth;
+    min-width: $minScreenWidth;
+    width: $containerWidth;
+    margin: 0 auto;
+}

@@ -1,0 +1,49 @@
+// {
+//     "compilerOptions": {
+//         "target": "esnext",
+//         "module": "esnext",
+//         "strict": true,
+//         "removeComments": true,
+//         "noImplicitAny":false,
+//         "suppressImplicitAnyIndexErrors":false,
+//         "sourceMap": true,
+//         "preserveConstEnums": true,
+//         "esModuleInterop":true,
+//         "allowJs": true
+//     }
+//  }
+
+
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "strict": true,
+      "jsx": "preserve",
+      "importHelpers": true,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      // "types": [
+      //   "node"    ],
+      "lib": [
+        "es2015",
+        "es7",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ]
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.vue",
+      "tests/**/*.ts",
+      "tests/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  

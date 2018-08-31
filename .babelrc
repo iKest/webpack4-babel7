@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+        },
+        "useBuiltIns":"usage",
+        "modules": false,
+        "debug": true
+      }
+    ]
+  ],
+  "plugins": [
+    ["transform-vue-jsx"],
+    [
+      "component",
+      {
+        "libraryName": "mint-ui",
+        "style": true
+      }
+    ]
+  ]
+}
