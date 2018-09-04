@@ -6,7 +6,7 @@ const baseConfig = require("./webpack.base");
 const merge = require("webpack-merge");
 const config = require("./config");
 const devWebpackConfig = merge(baseConfig, {
-  devtool: "eval-source-map", // 指定加source-map的方式
+  devtool: "cheap-module-eval-source-map", // 指定加source-map的方式
   devServer: {
     inline: true, //打包后加入一个websocket客户端
     hot: true, //热加载

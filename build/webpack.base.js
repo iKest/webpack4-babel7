@@ -61,6 +61,7 @@ module.exports = {
     filename: utils.isDev() ? "js/[name].js" : "js/[name].[hash].js",
     chunkFilename: "js/[name].[chunkhash:5].chunk.js"
   },
+ 
   resolve: {
     extensions: [".js", ".vue", ".ts", ".json"],
     alias: {} //配置别名可以加快webpack查找模块的速度
