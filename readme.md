@@ -37,7 +37,7 @@ stage 已被废除
 
 
 
- 设置"useBuiltIns":"usage"   依赖@babel/polyfill 不需要显示import
+ 设置"useBuiltIns":"usage"   依赖@babel/polyfill 不需要显式import
 
  会根据代码中用到的新语法按需 添加polyfill     
 
